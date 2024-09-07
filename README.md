@@ -1,27 +1,30 @@
-# React + TypeScript + Vite
+# Aplicación Front-End con Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación front-end construida con [Vite](https://vitejs.dev/). Vite es una herramienta moderna de construcción rápida, diseñada para aplicaciones web con un rendimiento optimizado en desarrollo y producción.
 
-Currently, two official plugins are available:
+## Requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Antes de comenzar, asegúrate de tener instalados los siguientes requisitos:
 
-## Expanding the ESLint configuration
+- [Node.js 16.20.2](https://nodejs.org/download/release/v16.20.2/) o superior
+- [npm](https://www.npmjs.com/) o [yarn](https://yarnpkg.com/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Instalación
 
-- Configure the top-level `parserOptions` property like this:
+### Clonar el Repositorio
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+Clona el repositorio a tu máquina local:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+git clone https://github.com/oscargps/TransferServiceFiduBogotaFront.git
+cd TransferServiceFiduBogotaFront
+
+###  Instalar dependencia
+
+npm install
+
+### Ejecturar
+
+npm run dev
+
+Disponible en http://localhost:5173/
