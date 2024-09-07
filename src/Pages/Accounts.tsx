@@ -62,7 +62,7 @@ const Accounts = () => {
         <>
             <Toaster position="top-center" richColors />
 
-            <div className="flex flex-row">
+            <div className="flex flex-row my-5 gap-2 items-center">
                 <Input
                     label="TITULAR DE LA CUENTA"
                     placeholder=" "
@@ -70,7 +70,7 @@ const Accounts = () => {
                     isRequired
                     size="md"
                     type="text"
-                    labelPlacement="outside"
+                    labelPlacement="inside"
                     radius="md"
                     name="titular"
                     value={formData?.titular}
@@ -78,11 +78,11 @@ const Accounts = () => {
                         addDataForm("titular", data);
                     }}
                 />
-                <Button color="default" size="md" onPress={handleSubmit}>
+                <Button color="default" size="lg" onPress={handleSubmit}>
                     CREAR CUENTA
                 </Button>
             </div>
-            <div className="flex flex-row">
+            <div className="flex flex-row gap-2 items-center">
                 <Input
                     label="NUMERO DE CUENTA"
                     placeholder=" "
@@ -90,7 +90,7 @@ const Accounts = () => {
                     isRequired
                     size="md"
                     type="text"
-                    labelPlacement="outside"
+                    labelPlacement="inside"
                     radius="md"
                     name="titular"
                     value={formData2?.accountNumber}
@@ -98,7 +98,7 @@ const Accounts = () => {
                         addDataForm2("account", data);
                     }}
                 />
-                <Button color="default" size="md" onPress={handleGetBalance}>
+                <Button color="default" size="lg" onPress={handleGetBalance}>
                     CONSULTAR SALDO
                 </Button>
             </div>
